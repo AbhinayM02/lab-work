@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<string.h>
+int len(char a[]){
+	int l=0,i;
+	for(i=0;a[i]!='\0';i++){
+		l++;
+	}
+	return l;
+}
+int main(){
+	char s[50];
+	printf("Enter String ");
+	gets(s);
+	printf("Length=%d",len(s));
+	return 0;
+}
